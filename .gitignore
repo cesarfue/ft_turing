@@ -1,0 +1,5 @@
+src/*.o
+src/*.cmi
+src/*.cmx
+*subject*
+ft_turing
