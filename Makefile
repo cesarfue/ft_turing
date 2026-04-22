@@ -1,7 +1,7 @@
 NAME      = ft_turing
 SRCDIR    = src
 BUILDDIR  = _build
-SRCS      = $(SRCDIR)/types.ml $(SRCDIR)/parser.ml $(SRCDIR)/main.ml
+SRCS      = $(SRCDIR)/types.ml $(SRCDIR)/ui.ml $(SRCDIR)/parser.ml $(SRCDIR)/main.ml
 OCAMLFIND = ocamlfind
 OCAMLOPT  = ocamlopt
 PACKAGES  = yojson
@@ -16,6 +16,7 @@ $(BUILDDIR):
 
 $(NAME): $(OBJS)
 	$(OCAMLFIND) $(OCAMLOPT) $(FLAGS) $(OBJS) -o $(NAME)
+	dune build 2>/dev/null || true
 
 $(BUILDDIR)/%.cmx: $(SRCDIR)/%.ml
 	$(OCAMLFIND) $(OCAMLOPT) $(FLAGS) -c $< -o $@
