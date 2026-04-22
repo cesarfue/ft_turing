@@ -3,3 +3,4 @@ src/*.cmi
 src/*.cmx
 *subject*
 ft_turing
+_build/*

@@ -1,18 +1,27 @@
-NAME    = ft_turing
-SRCDIR  = src
-SRCS    = $(SRCDIR)/main.ml
+NAME      = ft_turing
+SRCDIR    = src
+BUILDDIR  = _build
+SRCS      = $(SRCDIR)/types.ml $(SRCDIR)/parser.ml $(SRCDIR)/main.ml
 OCAMLFIND = ocamlfind
 OCAMLOPT  = ocamlopt
 PACKAGES  = yojson
-FLAGS     = -package $(PACKAGES) -linkpkg
+FLAGS     = -package $(PACKAGES) -linkpkg -I $(BUILDDIR)
 
-all: $(NAME)
+OBJS = $(patsubst $(SRCDIR)/%.ml, $(BUILDDIR)/%.cmx, $(SRCS))
 
-$(NAME):
-	$(OCAMLFIND) $(OCAMLOPT) $(FLAGS) $(SRCS) -o $(NAME)
+all: $(BUILDDIR) $(NAME)
+
+$(BUILDDIR):
+	mkdir -p $(BUILDDIR)
+
+$(NAME): $(OBJS)
+	$(OCAMLFIND) $(OCAMLOPT) $(FLAGS) $(OBJS) -o $(NAME)
+
+$(BUILDDIR)/%.cmx: $(SRCDIR)/%.ml
+	$(OCAMLFIND) $(OCAMLOPT) $(FLAGS) -c $< -o $@
 
 clean:
-	rm -f $(SRCDIR)/*.cmi $(SRCDIR)/*.cmx $(SRCDIR)/*.o
+	rm -rf $(BUILDDIR)
 
 fclean: clean
 	rm -f $(NAME)
