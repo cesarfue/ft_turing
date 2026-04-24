@@ -4,3 +4,5 @@ src/*.cmx
 *subject*
 ft_turing
 _build/*
+res/unary_add.txt
+tmp.txt
