@@ -1,0 +1,23 @@
+<1>11+11= -> scanright, 1, right
+1<1>1+11= -> scanright, 1, right
+11<1>+11= -> scanright, 1, right
+111<+>11= -> scanright, =, right
+111+<1>1= -> scanright, 1, right
+111+1<1>= -> scanright, 1, right
+111+11<=> -> addone, =, left
+
+111+1<1>= -> addone, 1, left
+111+<1>1= -> addone, 1, left
+111<+>11= -> replace, 1, right
+1111<1>1= -> replace, +, right
+1111+<1>= -> scanright, 1, right
+1111+1<=> -> addone, =, left
+
+1111+<1>= -> addone, 1, left
+1111<+>1= -> replace, 1, right
+11111<1>= -> replace, +, right
+11111+<=> -> addone, =, left
+11111<+>= -> clean, ., right
+11111.<=> -> halt, ., left
+
+

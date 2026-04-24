@@ -1,0 +1,36 @@
+********************************************************************************
+*                                                                              *
+*                                  unary_add                                   *
+*                                                                              *
+********************************************************************************
+Alphabet : [ 1, ., +, = ]
+States   : [ scanright, addone, replace, clean, HALT ]
+Initial  : scanright
+Finals   : [ HALT ]
+(replace, 1) -> (scanright, +, RIGHT)
+(scanright, .) -> (scanright, ., RIGHT)
+(scanright, 1) -> (scanright, 1, RIGHT)
+(scanright, +) -> (scanright, +, RIGHT)
+(scanright, =) -> (addone, =, LEFT)
+(clean, =) -> (HALT, ., LEFT)
+(addone, 1) -> (addone, 1, LEFT)
+(addone, +) -> (replace, 1, RIGHT)
+********************************************************************************
+[<1>11+11=.............] (scanright, 1) -> (scanright, 1, RIGHT)
+[1<1>1+11=.............] (scanright, 1) -> (scanright, 1, RIGHT)
+[11<1>+11=.............] (scanright, 1) -> (scanright, 1, RIGHT)
+[111<+>11=.............] (scanright, +) -> (scanright, +, RIGHT)
+[111+<1>1=.............] (scanright, 1) -> (scanright, 1, RIGHT)
+[111+1<1>=.............] (scanright, 1) -> (scanright, 1, RIGHT)
+[111+11<=>.............] (scanright, =) -> (addone, =, LEFT)
+[111+1<1>=.............] (addone, 1) -> (addone, 1, LEFT)
+[111+<1>1=.............] (addone, 1) -> (addone, 1, LEFT)
+[111<+>11=.............] (addone, +) -> (replace, 1, RIGHT)
+[1111<1>1=.............] (replace, 1) -> (scanright, +, RIGHT)
+[1111+<1>=.............] (scanright, 1) -> (scanright, 1, RIGHT)
+[1111+1<=>.............] (scanright, =) -> (addone, =, LEFT)
+[1111+<1>=.............] (addone, 1) -> (addone, 1, LEFT)
+[1111<+>1=.............] (addone, +) -> (replace, 1, RIGHT)
+[11111<1>=.............] (replace, 1) -> (scanright, +, RIGHT)
+[11111+<=>.............] (scanright, =) -> (addone, =, LEFT)
+[11111<+>=.............] (addone, +) -> (replace, 1, RIGHT)
