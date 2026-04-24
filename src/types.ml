@@ -16,3 +16,5 @@ type machine = {
   finals : string list;
   transitions : (string, transition list) Hashtbl.t;
 }
+
+type tape = { left : string list; current : string; right : string list }
