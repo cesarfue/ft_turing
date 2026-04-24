@@ -1,7 +1,7 @@
 NAME      = ft_turing
 SRCDIR    = src
 BUILDDIR  = _build
-SRCS      = $(SRCDIR)/types.ml $(SRCDIR)/ui.ml $(SRCDIR)/parser.ml $(SRCDIR)/main.ml
+SRCS      = $(SRCDIR)/types.ml $(SRCDIR)/ui.ml $(SRCDIR)/parser.ml $(SRCDIR)/core.ml $(SRCDIR)/main.ml
 OCAMLFIND = ocamlfind
 OCAMLOPT  = ocamlopt
 PACKAGES  = yojson

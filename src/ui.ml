@@ -20,7 +20,7 @@ let print_transition state transition =
     transition.to_state transition.write action
 
 let print_progression tape state transition =
-  let left_tape = String.concat "" tape.left in
+  let left_tape = String.concat "" (List.rev tape.left) in
   let right_tape = String.concat "" tape.right in
   let tape_length =
     String.length left_tape + String.length tape.current

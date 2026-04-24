@@ -19,14 +19,6 @@ let init_tape input =
   | [] -> failwith "empty input"
   | first :: rest -> { Types.left = []; current = first; right = rest }
 
-let run tape state machine =
-  if List.mem state machine.finals then Printf.printf "reached final";
-  let possible_transitions = Hashtbl.find machine.transitions state in
-  let transition =
-    List.find (fun trans -> trans.read = tape.current) possible_transitions
-  in
-  Ui.print_progression tape state transition
-
 let () =
   let args = Sys.argv in
   if Array.length args = 2 && (args.(1) = "-h" || args.(1) = "--help") then (
@@ -42,4 +34,4 @@ let () =
     let machine = Parser.parse_json jsonfile in
     let tape = init_tape input in
     Ui.print_header machine;
-    run tape machine.initial machine
+    Core.run tape machine.initial machine
