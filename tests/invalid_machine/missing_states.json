@@ -1,0 +1,10 @@
+{
+  "name": "test",
+  "alphabet": ["1", "."],
+  "blank": ".",
+  "initial": "q0",
+  "finals": ["HALT"],
+  "transitions": {
+    "q0": [{ "read": "1", "to_state": "HALT", "write": "1", "action": "RIGHT" }]
+  }
+}

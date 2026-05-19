@@ -1,0 +1,11 @@
+{
+  "name": "test",
+  "alphabet": ["1", "."],
+  "blank": ".",
+  "states": ["q0", "HALT"],
+  "initial": "q0",
+  "finals": ["HALT"],
+  "transitions": {
+    "q_ghost": [{ "read": "1", "to_state": "HALT", "write": "1", "action": "RIGHT" }]
+  }
+}
