@@ -1,19 +1,19 @@
 open Types
 
-let step tape transition =
+let step tape transition machine =
   let new_tape = { tape with current = transition.write } in
   match transition.action with
   | LEFT ->
       {
-        left = List.tl new_tape.left;
-        current = List.hd new_tape.left;
+        left = (match new_tape.left with [] -> [] | _ :: t -> t);
+        current = (match new_tape.left with [] -> machine.blank | c :: _ -> c);
         right = new_tape.current :: new_tape.right;
       }
   | RIGHT ->
       {
         left = new_tape.current :: new_tape.left;
-        current = List.hd new_tape.right;
-        right = List.tl new_tape.right;
+        current = (match new_tape.right with [] -> machine.blank | c :: _ -> c);
+        right = (match new_tape.right with [] -> [] | _ :: t -> t);
       }
 
 let rec run tape state machine =
@@ -23,5 +23,5 @@ let rec run tape state machine =
       List.find (fun trans -> trans.read = tape.current) possible_transitions
     in
     Ui.print_progression tape state transition;
-    let tape = step tape transition in
+    let tape = step tape transition machine in
     run tape transition.to_state machine)
