@@ -29,4 +29,7 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re
+test: all
+	@bash tests/run_tests.sh
+
+.PHONY: all clean fclean re test
