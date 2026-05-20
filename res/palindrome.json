@@ -1,6 +1,6 @@
 {
   "name": "palindrome",
-  "alphabet": ["a", "b", "x", ".", "y", "n"],
+  "alphabet": ["a", "b", ".", "y", "n"],
   "blank": ".",
   "states": [
     "find_target",
@@ -21,13 +21,31 @@
       {
         "read": "a",
         "to_state": "find_a",
-        "write": "x",
+        "write": ".",
         "action": "RIGHT"
       },
       {
         "read": "b",
         "to_state": "find_b",
-        "write": "x",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_n",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": ".",
         "action": "RIGHT"
       }
     ],
@@ -45,16 +63,22 @@
         "action": "RIGHT"
       },
       {
-        "read": "x",
-        "to_state": "check_a",
-        "write": "x",
-        "action": "LEFT"
-      },
-      {
         "read": ".",
         "to_state": "check_a",
         "write": ".",
         "action": "LEFT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": ".",
+        "action": "RIGHT"
       }
     ],
     "find_b": [
@@ -71,23 +95,29 @@
         "action": "RIGHT"
       },
       {
-        "read": "x",
-        "to_state": "check_b",
-        "write": "x",
-        "action": "LEFT"
-      },
-      {
         "read": ".",
         "to_state": "check_b",
         "write": ".",
         "action": "LEFT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": ".",
+        "action": "RIGHT"
       }
     ],
     "check_a": [
       {
         "read": "a",
         "to_state": "check_end",
-        "write": "x",
+        "write": ".",
         "action": "LEFT"
       },
       {
@@ -97,9 +127,9 @@
         "action": "RIGHT"
       },
       {
-        "read": "x",
+        "read": ".",
         "to_state": "write_y",
-        "write": "x",
+        "write": ".",
         "action": "RIGHT"
       }
     ],
@@ -113,13 +143,13 @@
       {
         "read": "b",
         "to_state": "check_end",
-        "write": "x",
+        "write": ".",
         "action": "LEFT"
       },
       {
-        "read": "x",
+        "read": ".",
         "to_state": "write_y",
-        "write": "x",
+        "write": ".",
         "action": "RIGHT"
       }
     ],
@@ -137,9 +167,9 @@
         "action": "LEFT"
       },
       {
-        "read": "x",
+        "read": ".",
         "to_state": "write_y",
-        "write": "x",
+        "write": ".",
         "action": "LEFT"
       }
     ],
@@ -157,9 +187,9 @@
         "action": "LEFT"
       },
       {
-        "read": "x",
+        "read": ".",
         "to_state": "find_target",
-        "write": "x",
+        "write": ".",
         "action": "RIGHT"
       }
     ],
@@ -174,12 +204,6 @@
         "read": "b",
         "to_state": "write_y",
         "write": "b",
-        "action": "RIGHT"
-      },
-      {
-        "read": "x",
-        "to_state": "write_y",
-        "write": "x",
         "action": "RIGHT"
       },
       {
@@ -203,13 +227,19 @@
         "action": "RIGHT"
       },
       {
-        "read": "x",
-        "to_state": "write_n",
-        "write": "x",
-        "action": "RIGHT"
+        "read": ".",
+        "to_state": "HALT",
+        "write": "n",
+        "action": "LEFT"
       },
       {
-        "read": ".",
+        "read": "y",
+        "to_state": "HALT",
+        "write": "n",
+        "action": "LEFT"
+      },
+      {
+        "read": "n",
         "to_state": "HALT",
         "write": "n",
         "action": "LEFT"
