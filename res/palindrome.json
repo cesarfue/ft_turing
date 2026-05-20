@@ -31,12 +31,6 @@
         "action": "RIGHT"
       },
       {
-        "read": ".",
-        "to_state": "write_n",
-        "write": ".",
-        "action": "RIGHT"
-      },
-      {
         "read": "y",
         "to_state": "write_n",
         "write": ".",
@@ -234,15 +228,15 @@
       },
       {
         "read": "y",
-        "to_state": "HALT",
+        "to_state": "write_n",
         "write": "n",
-        "action": "LEFT"
+        "action": "RIGHT"
       },
       {
         "read": "n",
-        "to_state": "HALT",
+        "to_state": "write_n",
         "write": "n",
-        "action": "LEFT"
+        "action": "RIGHT"
       }
     ]
   }

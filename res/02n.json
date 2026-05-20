@@ -1,10 +1,10 @@
 {
-  "name": "0n1n",
-  "alphabet": ["0", "1", ".", "y", "n"],
+  "name": "02n",
+  "alphabet": ["0", ".", "y", "n"],
   "blank": ".",
   "states": [
     "find_target",
-    "find",
+    "find_end",
     "check",
     "check_end",
     "windup",
@@ -18,14 +18,8 @@
     "find_target": [
       {
         "read": "0",
-        "to_state": "find",
+        "to_state": "find_end",
         "write": ".",
-        "action": "RIGHT"
-      },
-      {
-        "read": "1",
-        "to_state": "write_n",
-        "write": "1",
         "action": "RIGHT"
       },
       {
@@ -41,17 +35,11 @@
         "action": "RIGHT"
       }
     ],
-    "find": [
+    "find_end": [
       {
         "read": "0",
-        "to_state": "find",
+        "to_state": "find_end",
         "write": "0",
-        "action": "RIGHT"
-      },
-      {
-        "read": "1",
-        "to_state": "find",
-        "write": "1",
         "action": "RIGHT"
       },
       {
@@ -75,16 +63,10 @@
     ],
     "check": [
       {
-        "read": "1",
+        "read": "0",
         "to_state": "check_end",
         "write": ".",
         "action": "LEFT"
-      },
-      {
-        "read": "0",
-        "to_state": "write_n",
-        "write": "0",
-        "action": "RIGHT"
       },
       {
         "read": ".",
@@ -94,12 +76,6 @@
       }
     ],
     "check_end": [
-      {
-        "read": "1",
-        "to_state": "windup",
-        "write": "1",
-        "action": "LEFT"
-      },
       {
         "read": "0",
         "to_state": "windup",
@@ -121,12 +97,6 @@
         "action": "LEFT"
       },
       {
-        "read": "1",
-        "to_state": "windup",
-        "write": "1",
-        "action": "LEFT"
-      },
-      {
         "read": ".",
         "to_state": "find_target",
         "write": ".",
@@ -141,12 +111,6 @@
         "action": "RIGHT"
       },
       {
-        "read": "1",
-        "to_state": "write_y",
-        "write": "1",
-        "action": "RIGHT"
-      },
-      {
         "read": ".",
         "to_state": "HALT",
         "write": "y",
@@ -158,12 +122,6 @@
         "read": "0",
         "to_state": "write_n",
         "write": "0",
-        "action": "RIGHT"
-      },
-      {
-        "read": "1",
-        "to_state": "write_n",
-        "write": "1",
         "action": "RIGHT"
       },
       {

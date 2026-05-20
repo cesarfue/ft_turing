@@ -22,8 +22,11 @@ let () =
   else
     let jsonfile = args.(1) in
     let input = args.(2) in
-
-    let machine = Parser.make_machine jsonfile in
-    let tape = Parser.make_tape machine input in
-    Ui.print_header machine;
-    Core.run tape machine.initial machine
+    try
+      let machine = Parser.make_machine jsonfile in
+      let tape = Parser.make_tape machine input in
+      Ui.print_header machine;
+      Core.run tape machine.initial machine
+    with Failure msg ->
+      Printf.eprintf "%s\n" msg;
+      exit 1
