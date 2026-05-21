@@ -1,6 +1,6 @@
 {
   "name": "utm",
-  "alphabet": ["1", ".", "+", "="],
+  "alphabet": ["0", "1"],
   "blank": ".",
   "states": ["scanright", "checkop", "seekadd", "replace", "clean", "HALT"],
   "initial": "scanright",
