@@ -12,7 +12,8 @@ let step tape transition machine =
   | RIGHT ->
       {
         left = new_tape.current :: new_tape.left;
-        current = (match new_tape.right with [] -> machine.blank | c :: _ -> c);
+        current =
+          (match new_tape.right with [] -> machine.blank | c :: _ -> c);
         right = (match new_tape.right with [] -> [] | _ :: t -> t);
       }
 

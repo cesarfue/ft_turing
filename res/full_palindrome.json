@@ -1,0 +1,9441 @@
+{
+  "name": "full_palindrome",
+  "alphabet": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+    "."
+  ],
+  "blank": ".",
+  "states": [
+    "find_target",
+    "find_a",
+    "find_b",
+    "find_c",
+    "find_d",
+    "find_e",
+    "find_f",
+    "find_g",
+    "find_h",
+    "find_i",
+    "find_j",
+    "find_k",
+    "find_l",
+    "find_m",
+    "find_n",
+    "find_o",
+    "find_p",
+    "find_q",
+    "find_r",
+    "find_s",
+    "find_t",
+    "find_u",
+    "find_v",
+    "find_w",
+    "find_x",
+    "find_y",
+    "find_z",
+    "check_a",
+    "check_b",
+    "check_c",
+    "check_d",
+    "check_e",
+    "check_f",
+    "check_g",
+    "check_h",
+    "check_i",
+    "check_j",
+    "check_k",
+    "check_l",
+    "check_m",
+    "check_n",
+    "check_o",
+    "check_p",
+    "check_q",
+    "check_r",
+    "check_s",
+    "check_t",
+    "check_u",
+    "check_v",
+    "check_w",
+    "check_x",
+    "check_y",
+    "check_z",
+    "check_end",
+    "windup",
+    "write_y",
+    "write_n",
+    "HALT"
+  ],
+  "initial": "find_target",
+  "finals": [
+    "HALT"
+  ],
+  "transitions": {
+    "find_a": [
+      {
+        "read": "a",
+        "to_state": "find_a",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_a",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_a",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_a",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_a",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_a",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_a",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_a",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_a",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_a",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_a",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_a",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_a",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_a",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_a",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_a",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_a",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_a",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_a",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_a",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_a",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_a",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_a",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_a",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_a",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_a",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_a",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_b": [
+      {
+        "read": "b",
+        "to_state": "find_b",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_b",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_b",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_b",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_b",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_b",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_b",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_b",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_b",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_b",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_b",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_b",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_b",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_b",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_b",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_b",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_b",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_b",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_b",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_b",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_b",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_b",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_b",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_b",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_b",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_b",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_b",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_c": [
+      {
+        "read": "c",
+        "to_state": "find_c",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_c",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_c",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_c",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_c",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_c",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_c",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_c",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_c",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_c",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_c",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_c",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_c",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_c",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_c",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_c",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_c",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_c",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_c",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_c",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_c",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_c",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_c",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_c",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_c",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_c",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_c",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_d": [
+      {
+        "read": "d",
+        "to_state": "find_d",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_d",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_d",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_d",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_d",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_d",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_d",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_d",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_d",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_d",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_d",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_d",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_d",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_d",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_d",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_d",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_d",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_d",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_d",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_d",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_d",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_d",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_d",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_d",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_d",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_d",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_d",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_e": [
+      {
+        "read": "e",
+        "to_state": "find_e",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_e",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_e",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_e",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_e",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_e",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_e",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_e",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_e",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_e",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_e",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_e",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_e",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_e",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_e",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_e",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_e",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_e",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_e",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_e",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_e",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_e",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_e",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_e",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_e",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_e",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_e",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_f": [
+      {
+        "read": "f",
+        "to_state": "find_f",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_f",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_f",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_f",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_f",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_f",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_f",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_f",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_f",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_f",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_f",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_f",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_f",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_f",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_f",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_f",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_f",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_f",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_f",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_f",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_f",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_f",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_f",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_f",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_f",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_f",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_f",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_g": [
+      {
+        "read": "g",
+        "to_state": "find_g",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_g",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_g",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_g",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_g",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_g",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_g",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_g",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_g",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_g",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_g",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_g",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_g",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_g",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_g",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_g",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_g",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_g",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_g",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_g",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_g",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_g",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_g",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_g",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_g",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_g",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_g",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_h": [
+      {
+        "read": "h",
+        "to_state": "find_h",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_h",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_h",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_h",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_h",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_h",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_h",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_h",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_h",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_h",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_h",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_h",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_h",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_h",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_h",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_h",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_h",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_h",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_h",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_h",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_h",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_h",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_h",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_h",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_h",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_h",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_h",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_i": [
+      {
+        "read": "i",
+        "to_state": "find_i",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_i",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_i",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_i",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_i",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_i",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_i",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_i",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_i",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_i",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_i",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_i",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_i",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_i",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_i",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_i",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_i",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_i",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_i",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_i",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_i",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_i",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_i",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_i",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_i",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_i",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_i",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_j": [
+      {
+        "read": "j",
+        "to_state": "find_j",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_j",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_j",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_j",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_j",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_j",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_j",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_j",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_j",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_j",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_j",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_j",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_j",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_j",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_j",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_j",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_j",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_j",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_j",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_j",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_j",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_j",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_j",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_j",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_j",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_j",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_j",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_k": [
+      {
+        "read": "k",
+        "to_state": "find_k",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_k",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_k",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_k",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_k",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_k",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_k",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_k",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_k",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_k",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_k",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_k",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_k",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_k",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_k",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_k",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_k",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_k",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_k",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_k",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_k",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_k",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_k",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_k",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_k",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_k",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_k",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_l": [
+      {
+        "read": "l",
+        "to_state": "find_l",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_l",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_l",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_l",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_l",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_l",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_l",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_l",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_l",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_l",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_l",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_l",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_l",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_l",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_l",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_l",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_l",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_l",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_l",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_l",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_l",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_l",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_l",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_l",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_l",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_l",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_l",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_m": [
+      {
+        "read": "m",
+        "to_state": "find_m",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_m",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_m",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_m",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_m",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_m",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_m",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_m",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_m",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_m",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_m",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_m",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_m",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_m",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_m",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_m",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_m",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_m",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_m",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_m",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_m",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_m",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_m",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_m",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_m",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_m",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_m",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_n": [
+      {
+        "read": "n",
+        "to_state": "find_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_n",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_o": [
+      {
+        "read": "o",
+        "to_state": "find_o",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_o",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_o",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_o",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_o",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_o",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_o",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_o",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_o",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_o",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_o",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_o",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_o",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_o",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_o",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_o",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_o",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_o",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_o",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_o",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_o",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_o",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_o",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_o",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_o",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_o",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_o",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_p": [
+      {
+        "read": "p",
+        "to_state": "find_p",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_p",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_p",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_p",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_p",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_p",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_p",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_p",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_p",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_p",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_p",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_p",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_p",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_p",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_p",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_p",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_p",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_p",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_p",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_p",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_p",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_p",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_p",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_p",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_p",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_p",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_p",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_q": [
+      {
+        "read": "q",
+        "to_state": "find_q",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_q",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_q",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_q",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_q",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_q",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_q",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_q",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_q",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_q",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_q",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_q",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_q",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_q",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_q",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_q",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_q",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_q",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_q",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_q",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_q",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_q",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_q",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_q",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_q",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_q",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_q",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_r": [
+      {
+        "read": "r",
+        "to_state": "find_r",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_r",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_r",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_r",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_r",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_r",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_r",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_r",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_r",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_r",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_r",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_r",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_r",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_r",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_r",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_r",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_r",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_r",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_r",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_r",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_r",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_r",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_r",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_r",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_r",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_r",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_r",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_s": [
+      {
+        "read": "s",
+        "to_state": "find_s",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_s",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_s",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_s",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_s",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_s",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_s",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_s",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_s",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_s",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_s",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_s",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_s",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_s",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_s",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_s",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_s",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_s",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_s",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_s",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_s",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_s",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_s",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_s",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_s",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_s",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_s",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_t": [
+      {
+        "read": "t",
+        "to_state": "find_t",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_t",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_t",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_t",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_t",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_t",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_t",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_t",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_t",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_t",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_t",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_t",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_t",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_t",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_t",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_t",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_t",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_t",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_t",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_t",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_t",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_t",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_t",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_t",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_t",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_t",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_t",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_u": [
+      {
+        "read": "u",
+        "to_state": "find_u",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_u",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_u",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_u",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_u",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_u",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_u",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_u",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_u",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_u",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_u",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_u",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_u",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_u",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_u",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_u",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_u",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_u",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_u",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_u",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_u",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_u",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_u",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_u",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_u",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_u",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_u",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_v": [
+      {
+        "read": "v",
+        "to_state": "find_v",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_v",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_v",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_v",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_v",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_v",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_v",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_v",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_v",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_v",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_v",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_v",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_v",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_v",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_v",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_v",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_v",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_v",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_v",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_v",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_v",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_v",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_v",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_v",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_v",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_v",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_v",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_w": [
+      {
+        "read": "w",
+        "to_state": "find_w",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_w",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_w",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_w",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_w",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_w",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_w",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_w",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_w",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_w",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_w",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_w",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_w",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_w",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_w",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_w",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_w",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_w",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_w",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_w",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_w",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_w",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_w",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_w",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_w",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_w",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_w",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_x": [
+      {
+        "read": "x",
+        "to_state": "find_x",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_x",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_x",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_x",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_x",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_x",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_x",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_x",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_x",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_x",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_x",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_x",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_x",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_x",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_x",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_x",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_x",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_x",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_x",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_x",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_x",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_x",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_x",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_x",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_x",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_x",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_x",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_y": [
+      {
+        "read": "y",
+        "to_state": "find_y",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_y",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_y",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_y",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_y",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_y",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_y",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_y",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_y",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_y",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_y",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_y",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_y",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_y",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_y",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_y",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_y",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_y",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_y",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_y",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_y",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_y",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_y",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_y",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_y",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_y",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_y",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "find_z": [
+      {
+        "read": "z",
+        "to_state": "find_z",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": "a",
+        "to_state": "find_z",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_z",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_z",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_z",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_z",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_z",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_z",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_z",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_z",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_z",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_z",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_z",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_z",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_z",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_z",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_z",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_z",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_z",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_z",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_z",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_z",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_z",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_z",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_z",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_z",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "check_z",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "check_a": [
+      {
+        "read": "a",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_b": [
+      {
+        "read": "b",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_c": [
+      {
+        "read": "c",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_d": [
+      {
+        "read": "d",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_e": [
+      {
+        "read": "e",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_f": [
+      {
+        "read": "f",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_g": [
+      {
+        "read": "g",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_h": [
+      {
+        "read": "h",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_i": [
+      {
+        "read": "i",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_j": [
+      {
+        "read": "j",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_k": [
+      {
+        "read": "k",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_l": [
+      {
+        "read": "l",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_m": [
+      {
+        "read": "m",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_n": [
+      {
+        "read": "n",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_o": [
+      {
+        "read": "o",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_p": [
+      {
+        "read": "p",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_q": [
+      {
+        "read": "q",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_r": [
+      {
+        "read": "r",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_s": [
+      {
+        "read": "s",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_t": [
+      {
+        "read": "t",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_u": [
+      {
+        "read": "u",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_v": [
+      {
+        "read": "v",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_w": [
+      {
+        "read": "w",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_x": [
+      {
+        "read": "x",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_y": [
+      {
+        "read": "y",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_z": [
+      {
+        "read": "z",
+        "to_state": "check_end",
+        "write": ".",
+        "action": "LEFT"
+      },
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "find_target": [
+      {
+        "read": "a",
+        "to_state": "find_a",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "find_b",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "find_c",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "find_d",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "find_e",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "find_f",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "find_g",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "find_h",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "find_i",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "find_j",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "find_k",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "find_l",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "find_m",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "find_n",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "find_o",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "find_p",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "find_q",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "find_r",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "find_s",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "find_t",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "find_u",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "find_v",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "find_w",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "find_x",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "find_y",
+        "write": ".",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "find_z",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "check_end": [
+      {
+        "read": "a",
+        "to_state": "windup",
+        "write": "a",
+        "action": "LEFT"
+      },
+      {
+        "read": "b",
+        "to_state": "windup",
+        "write": "b",
+        "action": "LEFT"
+      },
+      {
+        "read": "c",
+        "to_state": "windup",
+        "write": "c",
+        "action": "LEFT"
+      },
+      {
+        "read": "d",
+        "to_state": "windup",
+        "write": "d",
+        "action": "LEFT"
+      },
+      {
+        "read": "e",
+        "to_state": "windup",
+        "write": "e",
+        "action": "LEFT"
+      },
+      {
+        "read": "f",
+        "to_state": "windup",
+        "write": "f",
+        "action": "LEFT"
+      },
+      {
+        "read": "g",
+        "to_state": "windup",
+        "write": "g",
+        "action": "LEFT"
+      },
+      {
+        "read": "h",
+        "to_state": "windup",
+        "write": "h",
+        "action": "LEFT"
+      },
+      {
+        "read": "i",
+        "to_state": "windup",
+        "write": "i",
+        "action": "LEFT"
+      },
+      {
+        "read": "j",
+        "to_state": "windup",
+        "write": "j",
+        "action": "LEFT"
+      },
+      {
+        "read": "k",
+        "to_state": "windup",
+        "write": "k",
+        "action": "LEFT"
+      },
+      {
+        "read": "l",
+        "to_state": "windup",
+        "write": "l",
+        "action": "LEFT"
+      },
+      {
+        "read": "m",
+        "to_state": "windup",
+        "write": "m",
+        "action": "LEFT"
+      },
+      {
+        "read": "n",
+        "to_state": "windup",
+        "write": "n",
+        "action": "LEFT"
+      },
+      {
+        "read": "o",
+        "to_state": "windup",
+        "write": "o",
+        "action": "LEFT"
+      },
+      {
+        "read": "p",
+        "to_state": "windup",
+        "write": "p",
+        "action": "LEFT"
+      },
+      {
+        "read": "q",
+        "to_state": "windup",
+        "write": "q",
+        "action": "LEFT"
+      },
+      {
+        "read": "r",
+        "to_state": "windup",
+        "write": "r",
+        "action": "LEFT"
+      },
+      {
+        "read": "s",
+        "to_state": "windup",
+        "write": "s",
+        "action": "LEFT"
+      },
+      {
+        "read": "t",
+        "to_state": "windup",
+        "write": "t",
+        "action": "LEFT"
+      },
+      {
+        "read": "u",
+        "to_state": "windup",
+        "write": "u",
+        "action": "LEFT"
+      },
+      {
+        "read": "v",
+        "to_state": "windup",
+        "write": "v",
+        "action": "LEFT"
+      },
+      {
+        "read": "w",
+        "to_state": "windup",
+        "write": "w",
+        "action": "LEFT"
+      },
+      {
+        "read": "x",
+        "to_state": "windup",
+        "write": "x",
+        "action": "LEFT"
+      },
+      {
+        "read": "y",
+        "to_state": "windup",
+        "write": "y",
+        "action": "LEFT"
+      },
+      {
+        "read": "z",
+        "to_state": "windup",
+        "write": "z",
+        "action": "LEFT"
+      },
+      {
+        "read": ".",
+        "to_state": "write_y",
+        "write": ".",
+        "action": "LEFT"
+      }
+    ],
+    "windup": [
+      {
+        "read": "a",
+        "to_state": "windup",
+        "write": "a",
+        "action": "LEFT"
+      },
+      {
+        "read": "b",
+        "to_state": "windup",
+        "write": "b",
+        "action": "LEFT"
+      },
+      {
+        "read": "c",
+        "to_state": "windup",
+        "write": "c",
+        "action": "LEFT"
+      },
+      {
+        "read": "d",
+        "to_state": "windup",
+        "write": "d",
+        "action": "LEFT"
+      },
+      {
+        "read": "e",
+        "to_state": "windup",
+        "write": "e",
+        "action": "LEFT"
+      },
+      {
+        "read": "f",
+        "to_state": "windup",
+        "write": "f",
+        "action": "LEFT"
+      },
+      {
+        "read": "g",
+        "to_state": "windup",
+        "write": "g",
+        "action": "LEFT"
+      },
+      {
+        "read": "h",
+        "to_state": "windup",
+        "write": "h",
+        "action": "LEFT"
+      },
+      {
+        "read": "i",
+        "to_state": "windup",
+        "write": "i",
+        "action": "LEFT"
+      },
+      {
+        "read": "j",
+        "to_state": "windup",
+        "write": "j",
+        "action": "LEFT"
+      },
+      {
+        "read": "k",
+        "to_state": "windup",
+        "write": "k",
+        "action": "LEFT"
+      },
+      {
+        "read": "l",
+        "to_state": "windup",
+        "write": "l",
+        "action": "LEFT"
+      },
+      {
+        "read": "m",
+        "to_state": "windup",
+        "write": "m",
+        "action": "LEFT"
+      },
+      {
+        "read": "n",
+        "to_state": "windup",
+        "write": "n",
+        "action": "LEFT"
+      },
+      {
+        "read": "o",
+        "to_state": "windup",
+        "write": "o",
+        "action": "LEFT"
+      },
+      {
+        "read": "p",
+        "to_state": "windup",
+        "write": "p",
+        "action": "LEFT"
+      },
+      {
+        "read": "q",
+        "to_state": "windup",
+        "write": "q",
+        "action": "LEFT"
+      },
+      {
+        "read": "r",
+        "to_state": "windup",
+        "write": "r",
+        "action": "LEFT"
+      },
+      {
+        "read": "s",
+        "to_state": "windup",
+        "write": "s",
+        "action": "LEFT"
+      },
+      {
+        "read": "t",
+        "to_state": "windup",
+        "write": "t",
+        "action": "LEFT"
+      },
+      {
+        "read": "u",
+        "to_state": "windup",
+        "write": "u",
+        "action": "LEFT"
+      },
+      {
+        "read": "v",
+        "to_state": "windup",
+        "write": "v",
+        "action": "LEFT"
+      },
+      {
+        "read": "w",
+        "to_state": "windup",
+        "write": "w",
+        "action": "LEFT"
+      },
+      {
+        "read": "x",
+        "to_state": "windup",
+        "write": "x",
+        "action": "LEFT"
+      },
+      {
+        "read": "y",
+        "to_state": "windup",
+        "write": "y",
+        "action": "LEFT"
+      },
+      {
+        "read": "z",
+        "to_state": "windup",
+        "write": "z",
+        "action": "LEFT"
+      },
+      {
+        "read": ".",
+        "to_state": "find_target",
+        "write": ".",
+        "action": "RIGHT"
+      }
+    ],
+    "write_y": [
+      {
+        "read": "a",
+        "to_state": "write_y",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_y",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_y",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_y",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_y",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_y",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_y",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_y",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_y",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_y",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_y",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_y",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_y",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_y",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_y",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_y",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_y",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_y",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_y",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_y",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_y",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_y",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_y",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_y",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_y",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_y",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "HALT",
+        "write": "y",
+        "action": "LEFT"
+      }
+    ],
+    "write_n": [
+      {
+        "read": "a",
+        "to_state": "write_n",
+        "write": "a",
+        "action": "RIGHT"
+      },
+      {
+        "read": "b",
+        "to_state": "write_n",
+        "write": "b",
+        "action": "RIGHT"
+      },
+      {
+        "read": "c",
+        "to_state": "write_n",
+        "write": "c",
+        "action": "RIGHT"
+      },
+      {
+        "read": "d",
+        "to_state": "write_n",
+        "write": "d",
+        "action": "RIGHT"
+      },
+      {
+        "read": "e",
+        "to_state": "write_n",
+        "write": "e",
+        "action": "RIGHT"
+      },
+      {
+        "read": "f",
+        "to_state": "write_n",
+        "write": "f",
+        "action": "RIGHT"
+      },
+      {
+        "read": "g",
+        "to_state": "write_n",
+        "write": "g",
+        "action": "RIGHT"
+      },
+      {
+        "read": "h",
+        "to_state": "write_n",
+        "write": "h",
+        "action": "RIGHT"
+      },
+      {
+        "read": "i",
+        "to_state": "write_n",
+        "write": "i",
+        "action": "RIGHT"
+      },
+      {
+        "read": "j",
+        "to_state": "write_n",
+        "write": "j",
+        "action": "RIGHT"
+      },
+      {
+        "read": "k",
+        "to_state": "write_n",
+        "write": "k",
+        "action": "RIGHT"
+      },
+      {
+        "read": "l",
+        "to_state": "write_n",
+        "write": "l",
+        "action": "RIGHT"
+      },
+      {
+        "read": "m",
+        "to_state": "write_n",
+        "write": "m",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "write_n",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": "o",
+        "to_state": "write_n",
+        "write": "o",
+        "action": "RIGHT"
+      },
+      {
+        "read": "p",
+        "to_state": "write_n",
+        "write": "p",
+        "action": "RIGHT"
+      },
+      {
+        "read": "q",
+        "to_state": "write_n",
+        "write": "q",
+        "action": "RIGHT"
+      },
+      {
+        "read": "r",
+        "to_state": "write_n",
+        "write": "r",
+        "action": "RIGHT"
+      },
+      {
+        "read": "s",
+        "to_state": "write_n",
+        "write": "s",
+        "action": "RIGHT"
+      },
+      {
+        "read": "t",
+        "to_state": "write_n",
+        "write": "t",
+        "action": "RIGHT"
+      },
+      {
+        "read": "u",
+        "to_state": "write_n",
+        "write": "u",
+        "action": "RIGHT"
+      },
+      {
+        "read": "v",
+        "to_state": "write_n",
+        "write": "v",
+        "action": "RIGHT"
+      },
+      {
+        "read": "w",
+        "to_state": "write_n",
+        "write": "w",
+        "action": "RIGHT"
+      },
+      {
+        "read": "x",
+        "to_state": "write_n",
+        "write": "x",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "write_n",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "z",
+        "to_state": "write_n",
+        "write": "z",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "HALT",
+        "write": "n",
+        "action": "LEFT"
+      }
+    ]
+  }
+}
