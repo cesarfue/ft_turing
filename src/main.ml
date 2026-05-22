@@ -22,11 +22,13 @@ let () =
   else
     let jsonfile = args.(1) in
     let input = args.(2) in
+    let steps = 0 in
+    let limit = 1000 in
     try
       let machine = Parser.make_machine jsonfile in
       let tape = Parser.make_tape machine input in
       Ui.print_header machine;
-      Core.run tape machine.initial machine
+      Core.run tape machine.initial machine steps limit
     with Failure msg ->
       Printf.eprintf "%s\n" msg;
       exit 1

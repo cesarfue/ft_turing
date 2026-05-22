@@ -13,6 +13,7 @@ run_test() {
   exit_code=$?
   if [ "$expect_fail" = "1" ] && [ $exit_code -ne 0 ]; then
     echo "[OK]   $desc"
+    PASS=$((PASS + 1))
   elif [ "$expect_fail" = "0" ] && [ $exit_code -eq 0 ]; then
     echo "[OK]   $desc"
     PASS=$((PASS + 1))
@@ -53,15 +54,15 @@ done
 
 echo ""
 echo "=== invalid tape ==="
-run_test "empty input"          1 $BIN $VALID ""
-run_test "blank in tape"        1 $BIN $VALID "1.1"
-run_test "char not in alphabet" 1 $BIN $VALID "1X1"
+run_test ""    1 $BIN $VALID ""
+run_test "1.1" 1 $BIN $VALID "1.1"
+run_test "1X1" 1 $BIN $VALID "1X1"
 
 echo ""
 echo "=== unary_add ==="
-run_test "1+1"      0 $BIN res/unary_add.json "1+1="
-run_test "11+11"    0 $BIN res/unary_add.json "11+11="
-run_test "0+0"      0 $BIN res/unary_add.json "+="
+run_test "1+1="   0 $BIN res/unary_add.json "1+1="
+run_test "11+11=" 0 $BIN res/unary_add.json "11+11="
+run_test "+="     0 $BIN res/unary_add.json "+="
 
 echo ""
 echo "=== palindrome ==="
@@ -100,8 +101,8 @@ run_test_result "0"          "HALT, n" $BIN $m_0n1n
 run_test_result "1100"          "HALT, n" $BIN $m_0n1n
 run_test_result "01010"          "HALT, n" $BIN $m_0n1n
 run_test_result "010"          "HALT, n" $BIN $m_0n1n
-run_test "empty input" 1 $BIN $m_0n1n ""
-run_test "space input" 1 $BIN $m_0n1n " "
+run_test ""  1 $BIN $m_0n1n ""
+run_test " " 1 $BIN $m_0n1n " "
 run_test_result "1"          "HALT, n" $BIN $m_0n1n
 run_test_result "00"         "HALT, n" $BIN $m_0n1n
 run_test_result "11"         "HALT, n" $BIN $m_0n1n
@@ -124,7 +125,50 @@ run_test_result "000"         "HALT, n" $BIN $m_02n
 run_test_result "0000"         "HALT, y" $BIN $m_02n
 run_test_result "00000"         "HALT, n" $BIN $m_02n
 run_test_result "000000"         "HALT, y" $BIN $m_02n
-run_test_result "0000000"         "HALT, n" $BIN $m_05n
+run_test_result "0000000"         "HALT, n" $BIN $m_02n
+
+echo ""
+echo "=== palindrome: result symbols in input ==="
+run_test_result "y"    "HALT, n" $BIN $m_pal
+run_test_result "n"    "HALT, n" $BIN $m_pal
+run_test_result "yy"   "HALT, n" $BIN $m_pal
+run_test_result "nn"   "HALT, n" $BIN $m_pal
+run_test_result "yn"   "HALT, n" $BIN $m_pal
+run_test_result "aya"  "HALT, n" $BIN $m_pal
+run_test_result "nbn"  "HALT, n" $BIN $m_pal
+run_test_result "abyn" "HALT, n" $BIN $m_pal
+run_test_result "byna" "HALT, n" $BIN $m_pal
+
+echo ""
+echo "=== 0n1n: result symbols in input ==="
+run_test_result "y"   "HALT, n" $BIN $m_0n1n
+run_test_result "yn"  "HALT, n" $BIN $m_0n1n
+run_test_result "y01" "HALT, n" $BIN $m_0n1n
+run_test_result "n10" "HALT, n" $BIN $m_0n1n
+run_test_result "01y" "HALT, n" $BIN $m_0n1n
+run_test_result "10n" "HALT, n" $BIN $m_0n1n
+run_test_result "1n0" "HALT, n" $BIN $m_0n1n
+
+echo ""
+echo "=== 02n: result symbols in input ==="
+run_test_result "y"   "HALT, n" $BIN $m_02n
+run_test_result "n"   "HALT, n" $BIN $m_02n
+run_test_result "yn"  "HALT, n" $BIN $m_02n
+run_test_result "yy"  "HALT, n" $BIN $m_02n
+run_test_result "00y" "HALT, n" $BIN $m_02n
+run_test_result "y00" "HALT, n" $BIN $m_02n
+run_test_result "0y0" "HALT, n" $BIN $m_02n
+run_test_result "n0n" "HALT, n" $BIN $m_02n
+
+echo ""
+echo "=== unary_add: no solution (valid alphabet, no halt) ==="
+run_test "+++" 1 $BIN res/unary_add.json "+++"
+run_test "1+1" 1 $BIN res/unary_add.json "1+1"
+run_test "111" 1 $BIN res/unary_add.json "111"
+run_test "+"   1 $BIN res/unary_add.json "+"
+run_test "===" 1 $BIN res/unary_add.json "==="
+run_test "="   1 $BIN res/unary_add.json "="
+run_test "1="  1 $BIN res/unary_add.json "1="
 
 echo ""
 echo "=== results: $PASS passed, $FAIL failed ==="
