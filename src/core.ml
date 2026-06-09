@@ -5,16 +5,16 @@ let step tape transition machine =
   match transition.action with
   | LEFT ->
       {
-        left = (match new_tape.left with [] -> [] | _ :: t -> t);
-        current = (match new_tape.left with [] -> machine.blank | c :: _ -> c);
+        left = (match new_tape.left with [] -> [] | _ :: tail -> tail);
+        current = (match new_tape.left with [] -> machine.blank | head :: _ -> head);
         right = new_tape.current :: new_tape.right;
       }
   | RIGHT ->
       {
         left = new_tape.current :: new_tape.left;
         current =
-          (match new_tape.right with [] -> machine.blank | c :: _ -> c);
-        right = (match new_tape.right with [] -> [] | _ :: t -> t);
+          (match new_tape.right with [] -> machine.blank | head :: _ -> head);
+        right = (match new_tape.right with [] -> [] | _ :: tail -> tail);
       }
 
 let rec run tape state machine steps limit =
@@ -27,7 +27,7 @@ let rec run tape state machine steps limit =
   if not (List.mem state machine.finals) then (
     let possible_transitions =
       match Hashtbl.find_opt machine.transitions state with
-      | Some t -> t
+      | Some transition -> transition
       | None ->
           Printf.eprintf "Error: no transitions defined for state '%s'\n" state;
           exit 1
@@ -38,7 +38,7 @@ let rec run tape state machine steps limit =
           (fun trans -> trans.read = tape.current)
           possible_transitions
       with
-      | Some t -> t
+      | Some transition -> transition
       | None ->
           Printf.eprintf "Error: no transition for state '%s' reading '%s'\n"
             state tape.current;
