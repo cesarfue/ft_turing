@@ -1,144 +1,85 @@
 {
-  "name": "02n",
-  "alphabet": ["0", ".", "y", "n"],
+  "name": "0_2n",
+  "alphabet": ["0", "y", "n", "."],
   "blank": ".",
-  "states": [
-    "find_target",
-    "find_end",
-    "check",
-    "check_end",
-    "windup",
-    "write_y",
-    "write_n",
-    "HALT"
-  ],
-  "initial": "find_target",
+  "states": ["even", "odd", "reject", "HALT"],
+  "initial": "even",
   "finals": ["HALT"],
   "transitions": {
-    "find_target": [
+    "even": [
       {
         "read": "0",
-        "to_state": "find_end",
-        "write": ".",
+        "to_state": "odd",
+        "write": "0",
         "action": "RIGHT"
       },
       {
         "read": "y",
-        "to_state": "write_n",
+        "to_state": "reject",
         "write": "y",
         "action": "RIGHT"
       },
       {
         "read": "n",
-        "to_state": "write_n",
+        "to_state": "reject",
         "write": "n",
-        "action": "RIGHT"
-      }
-    ],
-    "find_end": [
-      {
-        "read": "0",
-        "to_state": "find_end",
-        "write": "0",
-        "action": "RIGHT"
-      },
-      {
-        "read": ".",
-        "to_state": "check",
-        "write": ".",
-        "action": "LEFT"
-      },
-      {
-        "read": "y",
-        "to_state": "write_n",
-        "write": "n",
-        "action": "RIGHT"
-      },
-      {
-        "read": "n",
-        "to_state": "write_n",
-        "write": "n",
-        "action": "RIGHT"
-      }
-    ],
-    "check": [
-      {
-        "read": "0",
-        "to_state": "check_end",
-        "write": ".",
-        "action": "LEFT"
-      },
-      {
-        "read": ".",
-        "to_state": "write_n",
-        "write": ".",
-        "action": "RIGHT"
-      }
-    ],
-    "check_end": [
-      {
-        "read": "0",
-        "to_state": "windup",
-        "write": "0",
-        "action": "LEFT"
-      },
-      {
-        "read": ".",
-        "to_state": "write_y",
-        "write": ".",
-        "action": "LEFT"
-      }
-    ],
-    "windup": [
-      {
-        "read": "0",
-        "to_state": "windup",
-        "write": "0",
-        "action": "LEFT"
-      },
-      {
-        "read": ".",
-        "to_state": "find_target",
-        "write": ".",
-        "action": "RIGHT"
-      }
-    ],
-    "write_y": [
-      {
-        "read": "0",
-        "to_state": "write_y",
-        "write": "0",
         "action": "RIGHT"
       },
       {
         "read": ".",
         "to_state": "HALT",
         "write": "y",
-        "action": "LEFT"
+        "action": "RIGHT"
       }
     ],
-    "write_n": [
+    "odd": [
       {
         "read": "0",
-        "to_state": "write_n",
+        "to_state": "even",
         "write": "0",
+        "action": "RIGHT"
+      },
+      {
+        "read": "y",
+        "to_state": "reject",
+        "write": "y",
+        "action": "RIGHT"
+      },
+      {
+        "read": "n",
+        "to_state": "reject",
+        "write": "n",
         "action": "RIGHT"
       },
       {
         "read": ".",
         "to_state": "HALT",
         "write": "n",
-        "action": "LEFT"
+        "action": "RIGHT"
+      }
+    ],
+    "reject": [
+      {
+        "read": "0",
+        "to_state": "reject",
+        "write": "0",
+        "action": "RIGHT"
       },
       {
         "read": "y",
-        "to_state": "write_n",
+        "to_state": "reject",
         "write": "y",
         "action": "RIGHT"
       },
       {
         "read": "n",
-        "to_state": "write_n",
+        "to_state": "reject",
+        "write": "n",
+        "action": "RIGHT"
+      },
+      {
+        "read": ".",
+        "to_state": "HALT",
         "write": "n",
         "action": "RIGHT"
       }
